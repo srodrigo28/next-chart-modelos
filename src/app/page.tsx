@@ -45,7 +45,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-3 p-3">
+      <div className="flex flex-col md:flex-row gap-5">
         <div className="flex-1 min-w-[33%]">
           <ChartPieInteractive />
         </div>
@@ -70,9 +70,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mt-36 mb-36 hidden" > </div>
-
-      <div className="flex flex-col md:flex-row gap-5 mb-5">
+      <div className="flex flex-col md:flex-row gap-5 mb-5 mt-3">
 
         <div className="flex-1 min-w-[33%]">
           <ChartBarLabelCustom />

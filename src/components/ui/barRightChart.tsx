@@ -46,7 +46,7 @@ const chartConfig = {
     color: "var(--chart-2)",
   },
   label: {
-    color: "var(--background)",
+    color: "var(--foreground)",
   },
 } satisfies ChartConfig
 
