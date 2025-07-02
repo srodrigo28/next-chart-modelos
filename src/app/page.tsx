@@ -1,4 +1,5 @@
 import { ChartLineLabel } from "@/components/lineChart";
+import { ChartBarInteractive } from "@/components/ui/barFull";
 import { ChartBarLabelCustom } from "@/components/ui/barRightChart";
 import { ChartBarMultiple } from "@/components/ui/barUpChart";
 import { ChartAreaInteractive } from "@/components/ui/pieAreaChart";
@@ -44,6 +45,10 @@ export default function Home() {
 
       <div className="">
         <ChartAreaInteractive />
+      </div>
+
+      <div className="">
+        <ChartBarInteractive />
       </div>
     </div>
   );
