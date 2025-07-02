@@ -21,11 +21,11 @@ import {
 export const description = "A radial chart with a label"
 
 const chartData = [
-  { browser: "chrome", visitors: 275, fill: "var(--color-chrome)" },
-  { browser: "safari", visitors: 200, fill: "var(--color-safari)" },
-  { browser: "firefox", visitors: 187, fill: "var(--color-firefox)" },
-  { browser: "edge", visitors: 173, fill: "var(--color-edge)" },
-  { browser: "other", visitors: 90, fill: "var(--color-other)" },
+  { browser: "Pix", visitors: 275, fill: "var(--color-chrome)" },
+  { browser: "Dinheiro", visitors: 200, fill: "var(--color-safari)" },
+  { browser: "Crédito", visitors: 187, fill: "var(--color-firefox)" },
+  { browser: "Débito", visitors: 173, fill: "var(--color-edge)" },
+  { browser: "Contratos", visitors: 90, fill: "var(--color-other)" },
 ]
 
 const chartConfig = {
@@ -58,8 +58,8 @@ export function ChartRadialLabel() {
   return (
     <Card className="flex flex-col h-[30rem]">
       <CardHeader className="items-center pb-0">
-        <CardTitle>Radial Chart - Label</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
+        <CardTitle>Resumo de vendas</CardTitle>
+        <CardDescription>Janeiro - 2025</CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
         <ChartContainer
@@ -90,10 +90,10 @@ export function ChartRadialLabel() {
       </CardContent>
       <CardFooter className="flex-col gap-2 text-sm">
         <div className="flex items-center gap-2 leading-none font-medium">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+          Crescimento mês 8.2%. <TrendingUp className="h-4 w-4" />
         </div>
         <div className="text-muted-foreground leading-none">
-          Showing total visitors for the last 6 months
+          Total de vendas por categorias registradas.
         </div>
       </CardFooter>
     </Card>

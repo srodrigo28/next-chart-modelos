@@ -44,8 +44,8 @@ export function ChartLineLabel() {
   return (
     <Card className="h-[30rem]">
       <CardHeader>
-        <CardTitle>Line Chart - Label</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
+        <CardTitle>Registro de faturamento</CardTitle>
+        <CardDescription>Semestral linear</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
@@ -94,10 +94,10 @@ export function ChartLineLabel() {
       </CardContent>
       <CardFooter className="flex-col items-start gap-2 text-sm">
         <div className="flex gap-2 leading-none font-medium">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+          Registro de crescimento 19%. <TrendingUp className="h-4 w-4" />
         </div>
         <div className="text-muted-foreground leading-none">
-          Showing total visitors for the last 6 months
+          Fechamento semestre com lucro presumido.
         </div>
       </CardFooter>
     </Card>

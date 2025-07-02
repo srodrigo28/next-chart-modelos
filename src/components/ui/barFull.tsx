@@ -118,11 +118,11 @@ const chartConfig = {
     label: "Page Views",
   },
   desktop: {
-    label: "Desktop",
+    label: "Vendas Avista",
     color: "var(--chart-2)",
   },
   mobile: {
-    label: "Mobile",
+    label: "Vendas Crédito",
     color: "var(--chart-1)",
   },
 } satisfies ChartConfig
@@ -143,9 +143,9 @@ export function ChartBarInteractive() {
     <Card className="py-0">
       <CardHeader className="flex flex-col items-stretch border-b !p-0 sm:flex-row">
         <div className="flex flex-1 flex-col justify-center gap-1 px-6 pt-4 pb-3 sm:!py-0">
-          <CardTitle>Bar Chart - Interactive</CardTitle>
+          <CardTitle>Resumo de vendas</CardTitle>
           <CardDescription>
-            Showing total visitors for the last 3 months
+            Total de vendas últimos 3 meses
           </CardDescription>
         </div>
         <div className="flex">

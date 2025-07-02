@@ -45,18 +45,17 @@ export function ChartBarMultiple() {
         <div className="flex justify-between">
 
           <div>
-          <CardTitle>Bar Chart - Multiple</CardTitle>
-          <CardDescription>January - June 2024</CardDescription>
+          <CardTitle>Faturamento total</CardTitle>
+          <CardDescription>Junho 2025</CardDescription>
           </div>
 
           <div>
               <p>Total vendas mês:</p>
-              <p>Total contas mês:</p>
           </div>
         </div>
       </CardHeader>
-      <CardContent>
-        <ChartContainer config={chartConfig}>
+      <CardContent >
+        <ChartContainer config={chartConfig} className="h-[23rem] w-full">
           <BarChart accessibilityLayer data={chartData}>
             <CartesianGrid vertical={false} />
             <XAxis

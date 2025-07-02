@@ -22,7 +22,7 @@ import { ChartConfig, ChartContainer } from "@/components/ui/chart"
 export const description = "A radial chart with a custom shape"
 
 const chartData = [
-  { browser: "safari", visitors: 1260, fill: "var(--color-safari)" },
+  { browser: "safari", visitors: 400000, fill: "var(--color-safari)" },
 ]
 
 const chartConfig = {
@@ -39,8 +39,8 @@ export function ChartRadialShape() {
   return (
     <Card className="flex flex-col h-[30rem]">
       <CardHeader className="items-center pb-0">
-        <CardTitle>Radial Chart - Shape</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
+        <CardTitle>Vendas avista</CardTitle>
+        <CardDescription>Janeiro a Junho 2025</CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
         <ChartContainer
@@ -84,7 +84,7 @@ export function ChartRadialShape() {
                           y={(viewBox.cy || 0) + 24}
                           className="fill-muted-foreground"
                         >
-                          Visitors
+                          Total recebido.
                         </tspan>
                       </text>
                     )
@@ -97,10 +97,10 @@ export function ChartRadialShape() {
       </CardContent>
       <CardFooter className="flex-col gap-2 text-sm">
         <div className="flex items-center gap-2 leading-none font-medium">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+          Crescimento total no avista 17% no Semestre. <TrendingUp className="h-4 w-4" />
         </div>
         <div className="text-muted-foreground leading-none">
-          Showing total visitors for the last 6 months
+          Crescimento total registrado sobre valores já recebido.
         </div>
       </CardFooter>
     </Card>

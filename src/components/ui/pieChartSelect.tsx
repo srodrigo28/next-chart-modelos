@@ -47,23 +47,23 @@ const chartConfig = {
     label: "Mobile",
   },
   january: {
-    label: "January",
+    label: "Janeiro",
     color: "var(--chart-1)",
   },
   february: {
-    label: "February",
+    label: "Fevereiro",
     color: "var(--chart-2)",
   },
   march: {
-    label: "March",
+    label: "Março",
     color: "var(--chart-3)",
   },
   april: {
-    label: "April",
+    label: "Abril",
     color: "var(--chart-4)",
   },
   may: {
-    label: "May",
+    label: "Maio",
     color: "var(--chart-5)",
   },
 } satisfies ChartConfig
@@ -79,12 +79,12 @@ export function ChartPieInteractive() {
   const months = React.useMemo(() => desktopData.map((item) => item.month), [])
 
   return (
-    <Card data-chart={id} className="flex flex-col">
+    <Card data-chart={id} className="flex flex-col h-[30rem]">
       <ChartStyle id={id} config={chartConfig} />
       <CardHeader className="flex-row items-start space-y-0 pb-0">
         <div className="grid gap-1">
-          <CardTitle>Pie Chart - Interactive</CardTitle>
-          <CardDescription>January - June 2024</CardDescription>
+          <CardTitle>Gráfico resumo</CardTitle>
+          <CardDescription>Selecione o mês</CardDescription>
         </div>
         <Select value={activeMonth} onValueChange={setActiveMonth}>
           <SelectTrigger
@@ -176,7 +176,7 @@ export function ChartPieInteractive() {
                           y={(viewBox.cy || 0) + 24}
                           className="fill-muted-foreground"
                         >
-                          <span className="text-white text-3xl">Visitors</span>
+                          <span className="text-white text-3xl">Vendas</span>
                         </tspan>
                       </text>
                     )

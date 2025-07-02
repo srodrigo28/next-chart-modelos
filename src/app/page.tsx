@@ -2,30 +2,42 @@ import { ChartLineLabel } from "@/components/lineChart";
 import { ChartBarInteractive } from "@/components/ui/barFull";
 import { ChartBarLabelCustom } from "@/components/ui/barRightChart";
 import { ChartBarMultiple } from "@/components/ui/barUpChart";
+import { ChartBarLabel } from "@/components/ui/barUpChart2";
 import { ChartAreaInteractive } from "@/components/ui/pieAreaChart";
-import { ChartPieDonutText } from "@/components/ui/pieChar";
+import { PieCharGrafic } from "@/components/ui/pieCharGrafic";
+
 import { ChartPieInteractive } from "@/components/ui/pieChartSelect";
 import { ChartRadialShape } from "@/components/ui/radialChart1";
 import { ChartRadialLabel } from "@/components/ui/radialChart2";
+import { ChartRadialStacked } from "@/components/ui/radialChartMidium";
 
 export default function Home() {
   return (
     <div className="flex gap-3 flex-col h-screen p-3">
       <h1 className="text-6xl font-semibold text-center py-10">Modelos de gráficos</h1>    
 
-      <div>
-        <ChartPieInteractive />
+      <div className="flex flex-col md:flex-row gap-3 p-3">
+        <div className="flex-1">
+          <ChartPieInteractive />
+        </div>
+        <div className="flex-1">
+          <ChartRadialLabel />
+        </div>
+        
+        <div className="flex-1">
+          <PieCharGrafic />
+        </div>
       </div>  
       
       <div className="flex flex-col md:flex-row gap-5">
         <div className="flex-1">
-          <ChartPieDonutText />
+          <ChartRadialStacked />
         </div>
         <div className="flex-1">
            <ChartBarMultiple />
         </div>
         <div className="flex-1">
-          <ChartLineLabel />
+           <ChartBarLabel />
         </div>
       </div>
       
@@ -42,7 +54,7 @@ export default function Home() {
         </div>
 
         <div className="flex-1">
-          <ChartRadialLabel />
+          <ChartLineLabel />
         </div>
       </div>
 
