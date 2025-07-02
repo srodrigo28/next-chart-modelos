@@ -22,7 +22,7 @@ export default function Home() {
         <div className="flex">
           <Image src="https://avatars.githubusercontent.com/u/23580648?v=4" className=" ml-2 mr-2 rounded-full" alt="" width={50} height={50} />
           <div className="flex flex-col">
-            <p>Olá, <span>Amelia</span></p>
+            <p>Olá, <span>Sebastião</span></p>
             <p className="bg-green-600 py-1 mt-1 rounded-full text-center px-7">Admin</p>
           </div>
           </div>
