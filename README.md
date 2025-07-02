@@ -1,4 +1,7 @@
+#### Exemplos com NextJS 15 + ShadCN-UI
 
+<img src="./preview/grafico-web.png" alt="">
+<img src="./preview/mobile" alt="">
 
 #### eslint.config.mjs
 ```
