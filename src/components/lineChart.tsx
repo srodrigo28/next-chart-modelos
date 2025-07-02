@@ -1,14 +1,7 @@
 "use client"
 
 import { TrendingUp } from "lucide-react"
-import {
-  Bar,
-  BarChart,
-  CartesianGrid,
-  LabelList,
-  XAxis,
-  YAxis,
-} from "recharts"
+import { CartesianGrid, LabelList, Line, LineChart, XAxis } from "recharts"
 
 import {
   Card,
@@ -25,7 +18,7 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart"
 
-export const description = "A bar chart with a custom label"
+export const description = "A line chart with a label"
 
 const chartData = [
   { month: "January", desktop: 186, mobile: 80 },
@@ -39,70 +32,64 @@ const chartData = [
 const chartConfig = {
   desktop: {
     label: "Desktop",
-    color: "var(--chart-2)",
+    color: "var(--chart-1)",
   },
   mobile: {
     label: "Mobile",
     color: "var(--chart-2)",
   },
-  label: {
-    color: "var(--background)",
-  },
 } satisfies ChartConfig
 
-export function ChartBarLabelCustom() {
+export function ChartLineLabel() {
   return (
     <Card className="h-[30rem]">
       <CardHeader>
-        <CardTitle>Bar Chart - Custom Label</CardTitle>
+        <CardTitle>Line Chart - Label</CardTitle>
         <CardDescription>January - June 2024</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
-          <BarChart
+          <LineChart
             accessibilityLayer
             data={chartData}
-            layout="vertical"  // layout deve ficar aqui
             margin={{
-              right: 16,
+              top: 20,
+              left: 12,
+              right: 12,
             }}
           >
-            <CartesianGrid horizontal={false} />
-            <YAxis
+            <CartesianGrid vertical={false} />
+            <XAxis
               dataKey="month"
-              type="category"
               tickLine={false}
-              tickMargin={10}
               axisLine={false}
+              tickMargin={8}
               tickFormatter={(value) => value.slice(0, 3)}
-              hide
             />
-            <XAxis dataKey="desktop" type="number" hide />
             <ChartTooltip
               cursor={false}
               content={<ChartTooltipContent indicator="line" />}
             />
-            <Bar
+            <Line
               dataKey="desktop"
-              fill="var(--color-desktop)"
-              radius={4}
+              type="natural"
+              stroke="var(--color-desktop)"
+              strokeWidth={2}
+              dot={{
+                fill: "var(--color-desktop)",
+              }}
+              activeDot={{
+                r: 6,
+              }}
             >
               <LabelList
-                dataKey="month"
-                position="insideLeft"
-                offset={8}
-                className="fill-(--color-label)"
-                fontSize={12}
-              />
-              <LabelList
-                dataKey="desktop"
-                position="right"
-                offset={8}
+                position="top"
+                offset={12}
                 className="fill-foreground"
                 fontSize={12}
               />
-            </Bar>
-          </BarChart>
+            </Line>
+          </LineChart>
         </ChartContainer>
       </CardContent>
       <CardFooter className="flex-col items-start gap-2 text-sm">
