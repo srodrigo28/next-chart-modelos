@@ -126,7 +126,7 @@ export function ChartPieInteractive() {
         <ChartContainer
           id={id}
           config={chartConfig}
-          className="mx-auto aspect-square w-full max-w-[300px]"
+          className="mx-auto aspect-square w-full max-w-[250px]"
         >
           <PieChart>
             <ChartTooltip
@@ -155,34 +155,32 @@ export function ChartPieInteractive() {
               )}
             >
               <Label
-                content={({ viewBox }) => {
-                  if (viewBox && "cx" in viewBox && "cy" in viewBox) {
-                    return (
-                      <text
-                        x={viewBox.cx}
-                        y={viewBox.cy}
-                        textAnchor="middle"
-                        dominantBaseline="middle"
+                  content={() => (
+                    <text
+                      x="50%"
+                      y="50%"
+                      textAnchor="middle"
+                      dominantBaseline="middle"
+                    >
+                      <tspan
+                        fontSize="24"
+                        fontWeight="bold"
+                        fill="#F0F0F0"
                       >
-                        <tspan
-                          x={viewBox.cx}
-                          y={viewBox.cy}
-                          className="fill-foreground text-3xl font-bold"
-                        >
-                          {desktopData[activeIndex].desktop.toLocaleString()}
-                        </tspan>
-                        <tspan
-                          x={viewBox.cx}
-                          y={(viewBox.cy || 0) + 24}
-                          className="fill-muted-foreground"
-                        >
-                          <span className="text-white text-3xl">Vendas</span>
-                        </tspan>
-                      </text>
-                    )
-                  }
-                }}
-              />
+                        1529
+                      </tspan>
+
+                      <tspan
+                        x="50%"
+                        dy="1.5em"
+                        fontSize="12"
+                        fill="#71717a"
+                      >
+                        Total de Pedidos
+                      </tspan>
+                    </text>
+                  )}
+                />
             </Pie>
           </PieChart>
         </ChartContainer>
