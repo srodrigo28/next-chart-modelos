@@ -23,7 +23,7 @@ export default function Home() {
           <Image src="https://avatars.githubusercontent.com/u/23580648?v=4" className=" ml-2 mr-2 rounded-full" alt="" width={50} height={50} />
           <div className="flex flex-col">
             <p>Olá, <span>Sebastião</span></p>
-            <p className="bg-green-600 py-1 mt-1 rounded-full text-center px-7">Admin</p>
+            <p className="bg-green-600 py-1 mt-1 rounded-full text-center px-5">Admin</p>
           </div>
           </div>
         <input type="text" placeholder="Buscar por ?" className="flex-1 border-2 tracking-wider border-slate-700 p-3 mr-2 bg-slate-900 md:flex hidden rounded-md " />
