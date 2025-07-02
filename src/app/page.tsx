@@ -4,13 +4,18 @@ import { ChartBarLabelCustom } from "@/components/ui/barRightChart";
 import { ChartBarMultiple } from "@/components/ui/barUpChart";
 import { ChartAreaInteractive } from "@/components/ui/pieAreaChart";
 import { ChartPieDonutText } from "@/components/ui/pieChar";
+import { ChartPieInteractive } from "@/components/ui/pieChartSelect";
 import { ChartRadialShape } from "@/components/ui/radialChart1";
 import { ChartRadialLabel } from "@/components/ui/radialChart2";
 
 export default function Home() {
   return (
     <div className="flex gap-3 flex-col h-screen p-3">
-      <h1 className="text-6xl font-semibold text-center py-10">Modelos de gráficos</h1>      
+      <h1 className="text-6xl font-semibold text-center py-10">Modelos de gráficos</h1>    
+
+      <div>
+        <ChartPieInteractive />
+      </div>  
       
       <div className="flex flex-col md:flex-row gap-5">
         <div className="flex-1">
