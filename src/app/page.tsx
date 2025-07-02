@@ -46,26 +46,26 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col md:flex-row gap-3 p-3">
-        <div className="flex-1">
+        <div className="flex-1 min-w-[33%]">
           <ChartPieInteractive />
         </div>
-        <div className="flex-1">
+        <div className="flex-1 min-w-[33%]">
           <ChartRadialLabel />
         </div>
 
-        <div className="flex-1">
+        <div className="flex-1 min-w-[33%]">
           <PieCharGrafic />
         </div>
       </div>
 
       <div className="flex flex-col md:flex-row gap-5">
-        <div className="flex-1">
+        <div className="flex-1 min-w-[33%]">
           <ChartRadialStacked />
         </div>
-        <div className="flex-1">
+        <div className="flex-1 min-w-[33%]">
           <ChartBarMultiple />
         </div>
-        <div className="flex-1">
+        <div className="flex-1 min-w-[33%]">
           <ChartBarLabel />
         </div>
       </div>
@@ -74,15 +74,15 @@ export default function Home() {
 
       <div className="flex flex-col md:flex-row gap-5 mb-5">
 
-        <div className="flex-1">
+        <div className="flex-1 min-w-[33%]">
           <ChartBarLabelCustom />
         </div>
 
-        <div className="flex-1">
+        <div className="flex-1 min-w-[33%]">
           <ChartRadialShape />
         </div>
 
-        <div className="flex-1">
+        <div className="flex-1 min-w-[33%]">
           <ChartLineLabel />
         </div>
       </div>
