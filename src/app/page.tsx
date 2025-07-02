@@ -27,7 +27,7 @@ export default function Home() {
           </div>
           </div>
         <input type="text" placeholder="Buscar por ?" className="flex-1 border-2 tracking-wider border-slate-700 p-3 mr-2 bg-slate-900 md:flex hidden rounded-md " />
-        <div className="flex gap-2 justify-between md:w-40 w-44 px-3 ">
+        <div className="flex gap-2 justify-between md:w-40 w-36 px-3 ">
           <div className="flex gap-2">
 
             <button className="w-12 bg-slate-800 rounded-md flex justify-center items-center "> <FaArrowUpRightDots /> </button>
