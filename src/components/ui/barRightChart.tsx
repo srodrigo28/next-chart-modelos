@@ -54,7 +54,7 @@ export function ChartBarLabelCustom() {
   return (
     <Card className="h-[30rem]">
       <CardHeader>
-        <CardTitle>Demostrativo em barra</CardTitle>
+        <CardTitle>Demonstrativo em barra</CardTitle>
         <CardDescription>Janeiro a Junho</CardDescription>
       </CardHeader>
       <CardContent>

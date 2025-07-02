@@ -118,7 +118,7 @@ const chartConfig = {
     label: "Page Views",
   },
   desktop: {
-    label: "Vendas Avista",
+    label: "Vendas À vista",
     color: "var(--chart-2)",
   },
   mobile: {
