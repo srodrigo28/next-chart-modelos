@@ -107,7 +107,7 @@ export function ChartPieInteractive() {
                     <span
                       className="flex h-3 w-3 shrink-0 rounded-xs"
                       style={{
-                        backgroundColor: `var(--color-${key})`,
+                        backgroundColor: `var(----foreground-${key})`,
                       }}
                     />
                     {config?.label}
@@ -170,7 +170,7 @@ export function ChartPieInteractive() {
                         x="50%"
                         dy="1.5em"
                         fontSize="12"
-                        fill="#71717a"
+                        fill="#F0F0F0"
                       >
                         Total de Pedidos
                       </tspan>

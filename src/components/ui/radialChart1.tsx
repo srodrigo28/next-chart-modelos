@@ -39,7 +39,7 @@ export function ChartRadialShape() {
   return (
     <Card className="flex flex-col h-[30rem]">
       <CardHeader className="items-center pb-0">
-        <CardTitle>Vendas avista</CardTitle>
+        <CardTitle>Vendas à vista</CardTitle>
         <CardDescription>Janeiro a Junho 2025</CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">

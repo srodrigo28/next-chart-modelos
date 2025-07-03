@@ -19,11 +19,11 @@ export default function Home() {
     <div className="flex gap-3 flex-col h-screen p-3">
 
       <div className="flex md:gap-3 items-center justify-between mb-5 bg-slate-900 py-5 rounded-md px-5">
-        <div className="flex">
-          <Image src="https://avatars.githubusercontent.com/u/23580648?v=4" className=" ml-2 mr-2 rounded-full" alt="" width={50} height={50} />
+        <div className="flex w-96 md:w-44">
+          <Image src="https://avatars.githubusercontent.com/u/23580648?v=4" className=" md:ml-2 mr-2 rounded-full" alt="" width={60} height={40} />
           <div className="flex flex-col">
             <p>Olá, <span>Sebastião</span></p>
-            <p className="bg-green-600 py-1 mt-1 rounded-full text-center px-5">Admin</p>
+            <p className="bg-green-600 py-1 mt-1 rounded-full text-center px-3">Admin</p>
           </div>
           </div>
         <input type="text" placeholder="Buscar por ?" className="flex-1 border-2 tracking-wider border-slate-700 p-3 mr-2 bg-slate-900 md:flex hidden rounded-md " />
